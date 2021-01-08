@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <ImageView
+         android:id="@+id/ivItemimage"
+         android:padding="@dimen/dp_5"
+         android:src="@drawable/ic_cam"
+         android:background="@drawable/rounditems_bg"
+         android:layout_width="@dimen/dp_30"
+         android:layout_height="@dimen/dp_30"/>
+        <TextView
+            android:id="@+id/tvItemname"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="Camera/Phones/Photo"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:layout_below="@+id/llayoutpassword"
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

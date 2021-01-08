@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmets.Productsragment"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/statusbar"
+        android:background="@color/MenuColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100">
+        <TextView
+            android:id="@+id/titleproduct"
+            style="@style/MyStyle"
+            android:layout_centerHorizontal="true"
+            android:text="Products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <SearchView
+            android:layout_marginTop="@dimen/dp_15"
+            android:queryHint="Search products"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:background="@drawable/light_white_bg"
+            android:id="@+id/searchproducts"
+            android:layout_below="@+id/titleproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/statusbar"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:id="@+id/btnaddfragmentproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:padding="@dimen/dp_10"
+        android:text="@string/AddProduct"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

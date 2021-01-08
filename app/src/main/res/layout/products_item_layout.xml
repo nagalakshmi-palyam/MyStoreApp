@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    app:cardBackgroundColor="@color/whiteColor"
+    android:layout_marginBottom="@dimen/dp_20">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/whiteColor"
+            android:layout_margin="@dimen/dp_10"
+            app:cardCornerRadius="@dimen/dp_10"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/ivproductimagelist"
+                android:src="@drawable/ic_home"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Bangles"
+            android:id="@+id/tvproductItemName"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@drawable/ic_dotsmenu" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Price : "
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tvrupeesymbol"
+                android:text="₹ "
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tvpriceamount"
+                android:text="450"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Mrp : "
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/tvrupeesymbol1"
+                android:text="₹ "
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvmrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="450"
+                android:textColor="@color/DarkerGray" />
+            <View
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:background="@color/DarkerGray"/>
+            </RelativeLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#00ff00"
+                    android:text="discount : "
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#00ff00"
+                    android:id="@+id/tvdiscountamount"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:textColor="#00ff00"
+                        android:id="@+id/tvdpercentagesymbol"
+                        android:text="     %"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/btnupdate"
+                    android:background="@drawable/greenround_bg"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_10"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

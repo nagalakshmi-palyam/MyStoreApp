@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="createonlineStore">Create Online Store</string>
+    <string name="AddProductimage">Add product Image</string>
+    <string name="ProductImages">Product Images</string>
+    <string name="AddProduct">Add Product</string>
+    <string name="ShareonWhatsapp">Share on WhatsApp</string>
+    <string name="createonlinediscription">Congratulations on opening your new online store!</string>
+    <string name="addproductDescription">Create your first product by adding the product name and image</string>
+    <string name="shareonwhatsAppdescription">Share your MyStore URL with your contacts on WhatsApp</string>
+    <string name="businessname">Business name</string>
+    <string name="enterbusinessnameregistred">Enter your registred business name</string>
+    <string name="enterbusinessname">Enter business name</string>
+    <string name="save">Save</string>
+    <string name="finish">Finish</string>
+    <string name="selectMultiple">Select multiple categories if applicable(max 3)</string>
+    <string name="whatproductsdoyoucell">What Products or Services do you sell?</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="yourStore">Your store is created</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="sharelink">Share link on WhatsApp</string>
+    <string name="discription">Your customers can visit your online store and place orders from this link</string>
+    <string name="link">sharemystore.com/nagalakshmi......</string>
+    <string name="overView">OverView</string>
+    <string name="orders">ORDERS</string>
+    <string name="revenue">REVENUE</string>
+    <string name="storeviews">STORE VIEWS</string>
+    <string name="productvies">PRODUCT VIEWS</string>
+    <string name="activeorders">Active Orders</string>
+    <string name="viewAll">View All</string>
+    <string name="youdonot">You do not have any active orders</string>
+    <string name="video">Video Tutorials</string>
+    <string name="addcollection">Add Collection</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

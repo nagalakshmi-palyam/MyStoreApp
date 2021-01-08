@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "75702772398",
+    "project_id": "my-application-ed8b0",
+    "storage_bucket": "my-application-ed8b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75702772398:android:72c5f04702efba95b0033f",
+        "android_client_info": {
+          "package_name": "com.lakshmi.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75702772398-kmvgho972l77kqh16ri2jjk7lr14dl3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lakshmi.myapplication",
+            "certificate_hash": "96e4ad49abd52318ab797830dc69168366030e7f"
+          }
+        },
+        {
+          "client_id": "75702772398-63dnfb11jdo3l29ef6rjncdm9ifm53kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDns7H_g1VlBw5sVHg7KoTz9h2y5h6yMBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75702772398-63dnfb11jdo3l29ef6rjncdm9ifm53kv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

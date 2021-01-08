@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dp_40"
+    tools:context=".Activities.AddCollectionActivity">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/statusbarcollection"
+        android:background="@color/MenuColor"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/tvaddcollections"
+            style="@style/MyStyle"
+            android:layout_centerHorizontal="true"
+            android:text="All collections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/backArrowtoAddProducts"
+            android:src="@drawable/ic_backarrow"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ivplus"
+            android:src="@drawable/ic_plus"
+            android:layout_marginLeft="350dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+        <SearchView
+            android:layout_marginTop="@dimen/dp_15"
+            android:queryHint="Search products"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:background="@drawable/light_white_bg"
+            android:id="@+id/searchproducts"
+            android:layout_below="@+id/tvaddcollections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@+id/statusbarcollection"
+        android:id="@+id/collectionrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:id="@+id/btnaddcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:padding="@dimen/dp_10"
+        android:text="@string/addcollection"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
