@@ -313,6 +313,7 @@
                  </RelativeLayout>
              </androidx.cardview.widget.CardView>
              <androidx.cardview.widget.CardView
+                 android:id="@+id/cardhelp"
                  app:cardBackgroundColor="@color/whiteColor"
                  android:layout_marginTop="@dimen/dp_10"
                  app:cardCornerRadius="6dp"
@@ -369,6 +370,7 @@
                  </RelativeLayout>
              </androidx.cardview.widget.CardView>
              <androidx.cardview.widget.CardView
+                 android:id="@+id/cardsecurity"
                  app:cardBackgroundColor="@color/whiteColor"
                  android:layout_marginTop="@dimen/dp_10"
                  app:cardCornerRadius="6dp"

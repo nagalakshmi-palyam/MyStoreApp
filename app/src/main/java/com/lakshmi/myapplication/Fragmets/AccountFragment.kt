@@ -30,16 +30,27 @@ class AccountFragment : Fragment(), View.OnClickListener{
     }
     fun initViews(view:View){
      cardvideo.setOnClickListener(this)
+        cardhelp.setOnClickListener(this)
+        cardsecurity.setOnClickListener(this)
     }
     override fun onClick(v: View?) {
        when(v?.id){
            R.id.cardvideo->{
-//               val intent = Intent(requireContext(), VideoActivity::class.java)
-//               startActivity(intent)
-               val helpline = HelpLineFragment()
-               val bundle = Bundle()
+               val video = VideoFragment()
                activity?.let {
-                   it.supportFragmentManager.beginTransaction().replace(R.id.fragment_Container,helpline).commit()
+                   it.supportFragmentManager.beginTransaction().replace(R.id.fragment_Container,video).addToBackStack("Video").commit()
+               }
+           }
+           R.id.cardhelp->{
+               val helpline = HelpLineFragment()
+               activity?.let {
+                   it.supportFragmentManager.beginTransaction().replace(R.id.fragment_Container,helpline).addToBackStack("Helpline").commit()
+               }
+           }
+           R.id.cardsecurity->{
+               val privacy = PrivacyFragment()
+               activity?.let {
+                   it.supportFragmentManager.beginTransaction().replace(R.id.fragment_Container,privacy).addToBackStack("Privacy").commit()
                }
            }
        }
