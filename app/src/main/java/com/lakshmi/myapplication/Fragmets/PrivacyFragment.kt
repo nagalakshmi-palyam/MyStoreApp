@@ -28,6 +28,6 @@ class PrivacyFragment : Fragment() {
         initviews(view)
     }
     fun initviews(view: View){
-        webview.loadUrl("https://sharemystore.com/privacy-policy")
+        webview.loadUrl("https://sharemystore.com/home/")
     }
 }

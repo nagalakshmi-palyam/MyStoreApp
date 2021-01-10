@@ -7,7 +7,7 @@ import android.os.Handler
 import com.lakshmi.myapplication.R
 
 class SplashActivity : AppCompatActivity() {
-    private val SPLASH_DISPLAY_LENGTH = 4000
+    private val SPLASH_DISPLAY_LENGTH = 1000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)

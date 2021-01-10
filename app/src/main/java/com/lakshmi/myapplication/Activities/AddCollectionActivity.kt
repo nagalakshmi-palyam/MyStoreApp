@@ -9,6 +9,8 @@ import com.lakshmi.myapplication.DatabaseForCollectionFragment.Collection
 import com.lakshmi.myapplication.DatabaseForCollectionFragment.CollectionAdapter
 import com.lakshmi.myapplication.DatabaseForCollectionFragment.CollectionViewModel
 import com.lakshmi.myapplication.DatabaseForCollectionFragment.CollectionViewModelFactory
+import com.lakshmi.myapplication.Listners.CollectionItemClickListener
+import com.lakshmi.myapplication.Model.ItemModel
 import com.lakshmi.myapplication.R
 import com.lakshmi.myapplication.RoomDatabse.ProductAdapter
 import com.lakshmi.myapplication.RoomDatabse.ProductViewModel
@@ -16,7 +18,7 @@ import com.lakshmi.myapplication.RoomDatabse.Products
 import kotlinx.android.synthetic.main.activity_next_collection.*
 import kotlinx.android.synthetic.main.fragment_productsragment.*
 
-class AddCollectionActivity : AppCompatActivity(), View.OnClickListener{
+class AddCollectionActivity : AppCompatActivity(), View.OnClickListener,CollectionItemClickListener{
     private var category:String=""
     private var list = emptyList<Collection>()
     private lateinit var collectionViewModel: CollectionViewModel
@@ -55,7 +57,7 @@ class AddCollectionActivity : AppCompatActivity(), View.OnClickListener{
     }
    private fun setAdapterandLayout(){
         val linearlayoutmanager = LinearLayoutManager(this)
-        collectionAdapter= CollectionAdapter(list)
+        collectionAdapter= CollectionAdapter(list,this)
         collectionrecyclerview.apply {
             this.layoutManager = linearlayoutmanager
             this.adapter=collectionAdapter
@@ -71,6 +73,10 @@ class AddCollectionActivity : AppCompatActivity(), View.OnClickListener{
                 }
             }
         })
+
+    }
+
+    override fun onItemClicked(itemModel: Collection, Position: Int) {
 
     }
 }

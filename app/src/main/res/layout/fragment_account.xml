@@ -41,7 +41,7 @@
             android:layout_centerHorizontal="true"
             android:layout_margin="@dimen/dp_10"
             style="@style/MyStyle"
-            android:text="Bangles"
+            android:text="Furniture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <RelativeLayout
@@ -112,6 +112,7 @@
               </RelativeLayout>
             </androidx.cardview.widget.CardView>
              <androidx.cardview.widget.CardView
+                 android:id="@+id/cardpromote"
                  app:cardBackgroundColor="@color/whiteColor"
                  android:layout_marginTop="@dimen/dp_10"
                  app:cardCornerRadius="6dp"
@@ -342,6 +343,7 @@
                  </RelativeLayout>
              </androidx.cardview.widget.CardView>
              <androidx.cardview.widget.CardView
+                 android:id="@+id/cardshare"
                  app:cardBackgroundColor="@color/whiteColor"
                  android:layout_marginTop="@dimen/dp_10"
                  app:cardCornerRadius="6dp"

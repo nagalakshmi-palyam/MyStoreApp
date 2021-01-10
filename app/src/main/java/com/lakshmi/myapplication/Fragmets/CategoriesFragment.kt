@@ -10,11 +10,12 @@ import com.lakshmi.myapplication.DatabaseForCollectionFragment.Collection
 import com.lakshmi.myapplication.DatabaseForCollectionFragment.CollectionAdapter
 import com.lakshmi.myapplication.DatabaseForCollectionFragment.CollectionViewModel
 import com.lakshmi.myapplication.DatabaseForCollectionFragment.CollectionViewModelFactory
+import com.lakshmi.myapplication.Listners.CollectionItemClickListener
 import com.lakshmi.myapplication.R
 import kotlinx.android.synthetic.main.activity_next_collection.*
 import kotlinx.android.synthetic.main.fragment_categories.*
 
-class CategoriesFragment : Fragment() {
+class CategoriesFragment : Fragment(),CollectionItemClickListener{
     private var list = emptyList<Collection>()
     private lateinit var collectionViewModel: CollectionViewModel
     private lateinit var collectionAdapter: CollectionAdapter
@@ -38,7 +39,7 @@ class CategoriesFragment : Fragment() {
     }
     fun setAdapterandLayout(){
         val linearlayoutmanager = LinearLayoutManager(context)
-        collectionAdapter= CollectionAdapter(list)
+        collectionAdapter= CollectionAdapter(list,this)
         recyclercollectionfragment.apply {
             this.layoutManager = linearlayoutmanager
             this.adapter=collectionAdapter
@@ -54,6 +55,10 @@ class CategoriesFragment : Fragment() {
             }
         })
 
+    }
+
+    override fun onItemClicked(itemModel: Collection, Position: Int) {
+        TODO("Not yet implemented")
     }
 
 }
