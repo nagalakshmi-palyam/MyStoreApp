@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ViewPagerActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/viewlayout"
+        >
+    </androidx.viewpager2.widget.ViewPager2>
+    <LinearLayout
+        android:id="@+id/viewlayout"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/transperent_bg"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            app:tabGravity="center"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/teb_seletion"
+            app:tabIndicatorHeight="0dp">
+        </com.google.android.material.tabs.TabLayout>
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Trusted by 2 Crore+merchants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:id="@+id/btnnextactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/button_bg"
+            android:padding="@dimen/dp_10"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
