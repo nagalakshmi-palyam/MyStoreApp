@@ -73,6 +73,7 @@ class AddProduct : AppCompatActivity(), View.OnClickListener{
             btnaddProduct.setOnClickListener(this)
             etAddimage.setOnClickListener(this)
             nextCollection.setOnClickListener(this)
+            mylayout.setOnClickListener(this)
     }
     fun unitsSpinner(){
         var unitslist:MutableList<String> = mutableListOf<String>()
@@ -137,26 +138,35 @@ class AddProduct : AppCompatActivity(), View.OnClickListener{
               etAddimage.visibility=View.GONE
               productCard.visibility=View.VISIBLE
           }
-          R.id.nextCollection->{
+          R.id.mylayout->{
               if (isDataValid()) {
-                  productViewModel.apply {
-                      discountCalculate(etProductMrp.text.toString().toFloat(),etSellingPrize.text.toString().toFloat())
-                      discountpercen=getDiscount()
+
+                      productViewModel.apply {
+                          discountCalculate(
+                              etProductMrp.text.toString().toFloat(),
+                              etSellingPrize.text.toString().toFloat()
+                          )
+                          discountpercen = getDiscount()
+                      }
+                      //  discountpercen=(((etProductMrp.text.toString().toFloat()-etSellingPrize.text.toString().toFloat())/etProductMrp.text.toString().toFloat())*100)
+                      productViewModel.insertDatatoDatabase(
+                          productName = etProductName.text.toString(),
+                          mrp = etProductMrp.text.toString(),
+                          sellingPrice = etSellingPrize.text.toString(),
+                          selectUnit = units,
+                          addDesrciption = etDescription.text.toString(),
+                          chooseCategory = Category,
+                          productImage = etAddimage.text.toString(),
+                          discount = discountpercen.toString()
+                      )
+                      val intent = Intent(this@AddProduct, AddCollectionActivity::class.java)
+                      intent.putExtra("name", etProductName.text.toString())
+                      intent.putExtra("MRP", etProductMrp.text.toString())
+                      intent.putExtra("SP", etSellingPrize.text.toString())
+                      intent.putExtra("discount", discountpercen.toString())
+                      intent.putExtra("image", etAddimage.text.toString())
+                      startActivity(intent)
                   }
-                  //  discountpercen=(((etProductMrp.text.toString().toFloat()-etSellingPrize.text.toString().toFloat())/etProductMrp.text.toString().toFloat())*100)
-                  productViewModel.insertDatatoDatabase(
-                      productName = etProductName.text.toString(),
-                      mrp = etProductMrp.text.toString(),
-                      sellingPrice = etSellingPrize.text.toString(),
-                      selectUnit = units,
-                      addDesrciption = etDescription.text.toString(),
-                      chooseCategory =Category,
-                      productImage = etAddimage.text.toString(),
-                      discount =  discountpercen.toString()
-                  )
-              }
-              val intent = Intent(this@AddProduct, AddCollectionActivity::class.java)
-              startActivity(intent)
           }
       }
 
@@ -181,6 +191,10 @@ class AddProduct : AppCompatActivity(), View.OnClickListener{
 //        }
         if (etDescription.text.toString().isEmpty()) {
             etDescription.error = "Description cannot be empty"
+            return false
+        }
+        if(etProductMrp.text.toString().toFloat()<etSellingPrize.text.toString().toFloat()){
+           etSellingPrize.error="SellingPrice should not exceed MRP"
             return false
         }
 //        if (etCategory.text.toString().isEmpty()) {

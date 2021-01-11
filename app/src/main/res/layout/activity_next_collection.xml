@@ -25,12 +25,13 @@
             android:layout_marginLeft="@dimen/dp_20"
             android:layout_width="50dp"
             android:layout_height="wrap_content"/>
+
         <ImageView
             android:id="@+id/ivplus"
-            android:src="@drawable/ic_plus"
-            android:layout_marginLeft="350dp"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"/>
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/ic_plus" />
         <SearchView
             android:layout_marginTop="@dimen/dp_15"
             android:queryHint="Search products"

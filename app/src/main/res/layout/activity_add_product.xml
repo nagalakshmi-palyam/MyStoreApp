@@ -271,6 +271,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/mylayout"
                     android:layout_marginLeft="@dimen/dp_20"
                     android:layout_marginRight="@dimen/dp_20"
                     android:layout_width="match_parent"

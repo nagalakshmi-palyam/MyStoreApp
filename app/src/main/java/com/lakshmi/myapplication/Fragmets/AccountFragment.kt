@@ -18,11 +18,14 @@ import androidx.core.content.ContextCompat
 import com.lakshmi.myapplication.Activities.HomeActivity
 import com.lakshmi.myapplication.Activities.VideoActivity
 import com.lakshmi.myapplication.R
+import com.lakshmi.myapplication.StoreNameDatabase.StoreViewModel
+import com.lakshmi.myapplication.StoreNameDatabase.StoreViewModelFactory
 import kotlinx.android.synthetic.main.activity_add_product.*
 import kotlinx.android.synthetic.main.fragment_account.*
 import java.io.FileNotFoundException
 
 class AccountFragment : Fragment(), View.OnClickListener{
+    private lateinit var storeViewModel: StoreViewModel
     private val REQUEST_GET_SINGLE_FILE = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,9 +50,19 @@ class AccountFragment : Fragment(), View.OnClickListener{
         cardshare.setOnClickListener(this)
         ivprofileimage.setOnClickListener(this)
         cardpromote.setOnClickListener(this)
+        cardbusiness.setOnClickListener(this)
+        storeViewModel= StoreViewModelFactory(requireContext()).create(StoreViewModel::class.java)
+        fetchstorenamefromDatabase()
+        fetchprofilefromdataBase()
     }
     override fun onClick(v: View?) {
        when(v?.id){
+           R.id.cardbusiness->{
+               val businesshours = BusinessHours()
+               activity?.let {
+                   it.supportFragmentManager.beginTransaction().replace(R.id.fragment_Container,businesshours).addToBackStack("Business").commit()
+               }
+           }
            R.id.cardvideo->{
                val video = VideoFragment()
                activity?.let {
@@ -74,7 +87,7 @@ class AccountFragment : Fragment(), View.OnClickListener{
                var sharebody="Download the App now:https://play.google.com/store/apps/details?id=com.khatabook.dukaan"
                var sharesub="MyDukan"
                intent.putExtra(Intent.EXTRA_SUBJECT,sharesub)
-               intent.putExtra(Intent.EXTRA_SUBJECT,sharebody,)
+               intent.putExtra(Intent.EXTRA_SUBJECT,sharebody)
                startActivity(Intent.createChooser(intent,"Share Using"))
            }
            R.id.ivprofileimage->{
@@ -87,6 +100,26 @@ class AccountFragment : Fragment(), View.OnClickListener{
                }
            }
        }
+    }
+    fun fetchstorenamefromDatabase(){
+       storeViewModel.fetchDataFromDB().observe(this,{
+           for(i in 0 until it.size)
+           tvsmybusinessName.text=it[i].businessName
+       })
+    }
+    fun fetchprofilefromdataBase(){
+        storeViewModel.fetchProfileFromDB().observe(this,{
+            it.let{
+                for(i in 0 until it.size) {
+                    tvbusinesstype.text=it[i].businessType
+                    if(it[i].profilepic.equals(null)){
+                        ivprofileimage.setImageResource(R.drawable.profile)
+                    } else{
+                        ivprofileimage.setImageURI(Uri.parse(it[i].profilepic))
+                    }
+                }
+            }
+        })
     }
 
 

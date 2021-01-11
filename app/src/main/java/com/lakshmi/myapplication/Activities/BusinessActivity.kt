@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.lakshmi.myapplication.R
+import com.lakshmi.myapplication.StoreNameDatabase.StoreViewModel
+import com.lakshmi.myapplication.StoreNameDatabase.StoreViewModelFactory
 import kotlinx.android.synthetic.main.activity_add_product.*
 import kotlinx.android.synthetic.main.activity_business.*
 
 class BusinessActivity : AppCompatActivity(), View.OnClickListener {
+    private lateinit var storeViewModel: StoreViewModel
     private var businessName:String=""
     private var StoreName:String=""
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +23,7 @@ class BusinessActivity : AppCompatActivity(), View.OnClickListener {
         etbusinessName.setOnClickListener(this)
         etstoreName.setOnClickListener(this)
         btnSave.setOnClickListener(this)
+        storeViewModel=StoreViewModelFactory(this).create(StoreViewModel::class.java)
     }
 
     override fun onClick(v: View?) {
@@ -37,6 +41,8 @@ class BusinessActivity : AppCompatActivity(), View.OnClickListener {
                 if(isDataValid()){
                     businessName=etbusinessName.text.toString()
                     StoreName=etstoreName.text.toString()
+                    storeViewModel.insertStoretoDatabase(businessName=businessName,storeName = StoreName)
+
                 }
                 val intent = Intent(this@BusinessActivity, TypesofProductsActivity::class.java)
                 intent.putExtra("business",businessName)

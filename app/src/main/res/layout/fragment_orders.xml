@@ -5,10 +5,32 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragmets.OrdersFragment">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/statusbar"
+        android:background="@color/MenuColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+        <TextView
+            style="@style/MyStyle"
+            android:layout_centerHorizontal="true"
+            android:text="Orders"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/backArrow"
+            android:src="@drawable/ic_backarrow"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
     <androidx.cardview.widget.CardView
+        android:layout_below="@id/statusbar"
         app:cardBackgroundColor="@color/whiteColor"
         android:id="@+id/cardview"
-        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_20"
         android:layout_marginLeft="@dimen/dp_20"
         android:layout_marginRight="@dimen/dp_20"
         app:cardCornerRadius="5dp"

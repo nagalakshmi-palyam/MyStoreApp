@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "collection")
 data class Collection (
     @PrimaryKey(autoGenerate = true)
-    var productId: Int = 0,
+    var collectionId: Int = 0,
     @ColumnInfo(name = "collectionname")
     val collectionname: String,
     @ColumnInfo(name = "collectionimage")

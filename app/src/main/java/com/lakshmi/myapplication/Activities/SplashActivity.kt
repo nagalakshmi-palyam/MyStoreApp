@@ -12,7 +12,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         Handler().postDelayed({
-            val mainIntent = Intent(this@SplashActivity, BusinessActivity::class.java)
+            val mainIntent = Intent(this@SplashActivity, ViewPagerActivity::class.java)
             this@SplashActivity.startActivity(mainIntent)
             finish()
         }, SPLASH_DISPLAY_LENGTH.toLong())

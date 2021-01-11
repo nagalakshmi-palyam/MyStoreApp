@@ -58,7 +58,10 @@ class CategoriesFragment : Fragment(),CollectionItemClickListener{
     }
 
     override fun onItemClicked(itemModel: Collection, Position: Int) {
-        TODO("Not yet implemented")
+        val productfragment = ProductsUnderCollectionFragment()
+        activity?.let {
+            it.supportFragmentManager.beginTransaction().replace(R.id.fragment_Container,productfragment).addToBackStack("ProductUnserCollection").commit()
+        }
     }
 
 }

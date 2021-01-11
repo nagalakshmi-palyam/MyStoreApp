@@ -15,6 +15,5 @@ class ProductViewHolder(private val view: View):RecyclerView.ViewHolder(view) {
             tvpriceamount.text=products.sellingprice
             tvdiscountamount.text=products.discount
         }
-
     }
 }
