@@ -10,9 +10,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class ProductcategoryViewModel(private val context: Context): ViewModel() {
-    fun insertProductsDatatoDatabase(Name:String,mrp:String,Price:String,productImage:String,discount:String,){
+    fun insertProductsDatatoDatabase(Name:String,mrp:String,Price:String,productImage:String,discount:String,collectionName:String){
         CoroutineScope(Dispatchers.IO).launch {
-            val productscategory=Productcategory(categorproductname = Name,categormrp = mrp,categorsellingprice = Price,categorproductimage = productImage,categordiscount =discount )
+            val productscategory=Productcategory(categorproductname = Name,categormrp = mrp,categorsellingprice = Price,categorproductimage = productImage,categordiscount =discount,collectionName = collectionName )
             ProductCatogoryDatabase.getInstance(context).productCategoryDao.insertProductscategory(productscategory)
         }
     }

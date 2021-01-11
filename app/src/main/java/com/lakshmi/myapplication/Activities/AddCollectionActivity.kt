@@ -22,6 +22,7 @@ import kotlinx.android.synthetic.main.activity_next_collection.*
 import kotlinx.android.synthetic.main.fragment_productsragment.*
 
 class AddCollectionActivity : AppCompatActivity(), View.OnClickListener,CollectionItemClickListener{
+    private var myCollectionName="";
     private var nameProduct=""
     private var nameMrp=""
     private var nameSP=""
@@ -97,7 +98,8 @@ class AddCollectionActivity : AppCompatActivity(), View.OnClickListener,Collecti
                mrp = nameMrp,
                Price = nameSP,
                productImage = nameImage,
-               discount = nameDiscount
+               discount = nameDiscount,
+              collectionName = category
            )
     }
 }

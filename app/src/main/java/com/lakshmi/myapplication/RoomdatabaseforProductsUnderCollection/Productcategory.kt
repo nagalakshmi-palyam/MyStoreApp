@@ -16,6 +16,8 @@ data class Productcategory(
     @ColumnInfo(name="categorproductimage")
     val categorproductimage:String,
     @ColumnInfo(name="categordiscount")
-    val categordiscount:String
+    val categordiscount:String,
+    @ColumnInfo(name="collectionName")
+    val collectionName:String
 
 )
