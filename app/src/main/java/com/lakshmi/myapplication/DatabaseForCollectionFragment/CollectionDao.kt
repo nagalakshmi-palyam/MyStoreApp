@@ -12,4 +12,6 @@ interface CollectionDao {
     suspend fun insertCollections(collections:Collection)
     @Query("Select * From collection")
     fun getAllCollections(): LiveData<List<Collection>>
+    @Query("Select * From collection where collectionname= :mycollectinName")
+    fun getSearchCollection(mycollectinName:String): LiveData<List<Collection>>
 }

@@ -56,6 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
                <LinearLayout
+                   android:id="@+id/btnshare"
                    android:orientation="horizontal"
                    android:background="@drawable/green_rectangle"
                    android:layout_width="wrap_content"
@@ -230,10 +231,11 @@
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/dp_20"
                             android:layout_marginLeft="@dimen/dp_20"
-                            android:text="@string/productvies"
+                            android:text="PRODUCT COUNT"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
+                            android:id="@+id/productcount"
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:layout_below="@+id/product"

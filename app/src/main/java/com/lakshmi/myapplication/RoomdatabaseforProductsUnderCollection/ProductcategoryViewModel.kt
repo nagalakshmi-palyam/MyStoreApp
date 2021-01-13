@@ -2,6 +2,7 @@ package com.lakshmi.myapplication.RoomdatabaseforProductsUnderCollection
 
 import android.content.Context
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.lakshmi.myapplication.RoomDatabse.ProductDatabase
 import com.lakshmi.myapplication.RoomDatabse.Products
@@ -16,8 +17,12 @@ class ProductcategoryViewModel(private val context: Context): ViewModel() {
             ProductCatogoryDatabase.getInstance(context).productCategoryDao.insertProductscategory(productscategory)
         }
     }
-    fun fetchProductsDataFromDB(): LiveData<List<Productcategory>> {
+    fun fetchProductsDataFromDB(category:String): LiveData<List<Productcategory>> {
         return ProductCatogoryDatabase.getInstance(context)
-            .productCategoryDao.getAllProductcategory()
+            .productCategoryDao.getAllProductcategory(category)
+    }
+    val collection= MutableLiveData<String>()
+    fun senddata(mycollectionName:String){
+        collection.value=mycollectionName
     }
 }

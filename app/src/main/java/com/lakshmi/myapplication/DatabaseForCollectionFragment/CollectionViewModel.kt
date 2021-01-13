@@ -21,4 +21,8 @@ class CollectionViewModel(private val context: Context): ViewModel()  {
         return CollectionDatabase.getInstance(context)
             .collectionDao.getAllCollections()
     }
+    fun fetchcollectionFromDB(collectionname:String): LiveData<List<Collection>> {
+        return CollectionDatabase.getInstance(context)
+            .collectionDao.getSearchCollection(collectionname)
+    }
 }

@@ -38,20 +38,31 @@ class AddCollectionActivity : AppCompatActivity(), View.OnClickListener,Collecti
         setContentView(R.layout.activity_next_collection)
         collectionViewModel= CollectionViewModelFactory(this).create(CollectionViewModel::class.java)
         productcategoryViewModel=ProductcategoryViewModelFactory(this).create(ProductcategoryViewModel::class.java)
-        setAdapterandLayout()
         fetchfromDatabase()
+        setAdapterandLayout()
         nameProduct= intent.getStringExtra("name").toString()
         nameMrp=intent.getStringExtra("MRP").toString()
         nameSP=intent.getStringExtra("SP").toString()
         nameDiscount=intent.getStringExtra("discount").toString()
         nameImage=intent.getStringExtra("image").toString()
         initviews()
+
     }
     fun initviews(){
         backArrowtoAddProducts.setOnClickListener(this)
         btnaddcategory.setOnClickListener(this)
         ivplus.setOnClickListener(this)
 
+    }
+    override fun onItemClicked(itemModel: Collection, Position: Int) {
+        productcategoryViewModel.insertProductsDatatoDatabase(
+            Name = nameProduct,
+            mrp = nameMrp,
+            Price = nameSP,
+            productImage = nameImage,
+            discount = nameDiscount,
+            collectionName = category
+        )
     }
 
     override fun onClick(v: View?) {
@@ -92,14 +103,5 @@ class AddCollectionActivity : AppCompatActivity(), View.OnClickListener,Collecti
 
     }
 
-    override fun onItemClicked(itemModel: Collection, Position: Int) {
-           productcategoryViewModel.insertProductsDatatoDatabase(
-               Name = nameProduct,
-               mrp = nameMrp,
-               Price = nameSP,
-               productImage = nameImage,
-               discount = nameDiscount,
-              collectionName = category
-           )
-    }
+
 }

@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.lakshmi.myapplication.R
 import com.lakshmi.myapplication.RoomDatabse.ProductAdapter
@@ -18,6 +19,7 @@ import kotlinx.android.synthetic.main.fragment_products_under_collection.*
 import kotlinx.android.synthetic.main.fragment_productsragment.*
 
 class ProductsUnderCollectionFragment : Fragment() {
+    private var mycategoryName:String=""
     private var list = emptyList<Productcategory>()
     private lateinit var productcategoryViewModel: ProductcategoryViewModel
     private lateinit var productcategoryAdapter: ProductcategoryAdapter
@@ -37,12 +39,26 @@ class ProductsUnderCollectionFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        arguments?.let {
+            mycategoryName = it.getString("data").toString()
+        }
         initviews(view)
     }
    fun initviews(view:View){
       productcategoryViewModel=ProductcategoryViewModelFactory(this.requireContext()).create(ProductcategoryViewModel::class.java)
+       fetchproductsfromdatabase(mycategoryName)
        setAdapterandLayout()
-       fetchproductsfromdatabase()
+//       productcategoryViewModel.collection.observe(this,{
+//           it.let{
+//            mycategoryName=it
+//
+//           }
+//       })
+       Toast.makeText(
+           requireContext(),
+           "Category :"+mycategoryName, Toast.LENGTH_SHORT
+       ).show()
+
    }
     fun setAdapterandLayout(){
         val linearlayoutmanager = LinearLayoutManager(context)
@@ -53,8 +69,8 @@ class ProductsUnderCollectionFragment : Fragment() {
         }
 
     }
-    fun fetchproductsfromdatabase(){
-       productcategoryViewModel.fetchProductsDataFromDB().observe(this,{
+    fun fetchproductsfromdatabase(name:String){
+       productcategoryViewModel.fetchProductsDataFromDB(name).observe(this,{
            it.let{
                this.list=it
                    productcategoryAdapter.updateProducts(it)

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.lakshmi.myapplication.Activities.AddProduct
 import com.lakshmi.myapplication.R
 import com.lakshmi.myapplication.RoomDatabse.ProductAdapter
 import com.lakshmi.myapplication.RoomDatabse.ProductViewModel
@@ -15,7 +16,7 @@ import com.lakshmi.myapplication.RoomDatabse.ProductViewModelFactory
 import com.lakshmi.myapplication.RoomDatabse.Products
 import kotlinx.android.synthetic.main.fragment_productsragment.*
 
-class Productsragment : Fragment() {
+class Productsragment : Fragment() ,View.OnClickListener{
     private var list = emptyList<Products>()
     private lateinit var productViewModel: ProductViewModel
     private lateinit var productAdapter: ProductAdapter
@@ -37,7 +38,7 @@ class Productsragment : Fragment() {
         fetchfromDatabase()
         searchproducts.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-
+                searchProductsFromdatabase(query)
                 return false
             }
 
@@ -45,6 +46,7 @@ class Productsragment : Fragment() {
                 return false
             }
         })
+        btnaddfragmentproduct.setOnClickListener(this)
     }
  fun setAdapterandLayout(){
      val linearlayoutmanager = LinearLayoutManager(context)
@@ -62,5 +64,23 @@ class Productsragment : Fragment() {
             }
         })
 
+    }
+    fun searchProductsFromdatabase(myProductName:String){
+        productViewModel.searchDataFromDB(myProductName).observe(this,{
+            it.let {
+                this.list=it
+                productAdapter.updateList(it)
+            }
+        })
+    }
+
+    override fun onClick(v: View?) {
+        when(v?.id){
+
+            R.id.btnaddfragmentproduct->{
+                val intent=Intent(requireContext(),AddProduct::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }

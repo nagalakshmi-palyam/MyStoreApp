@@ -1,5 +1,5 @@
-//package com.lakshmi.myapplication.DatabaseForCollectionFragment
-//
+package com.lakshmi.myapplication.DatabaseForCollectionFragment
+
 //import androidx.room.Dao
 //import androidx.room.Insert
 //import androidx.room.Query

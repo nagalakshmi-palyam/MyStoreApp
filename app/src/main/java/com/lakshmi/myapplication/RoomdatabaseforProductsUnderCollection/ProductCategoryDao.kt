@@ -10,6 +10,6 @@ import com.lakshmi.myapplication.RoomDatabse.Products
 interface ProductCategoryDao {
     @Insert
     suspend fun insertProductscategory(productcategory: Productcategory)
-    @Query("Select * From mycategory")
-    fun getAllProductcategory(): LiveData<List<Productcategory>>
+    @Query("Select * From mycategory where collectionName= :collectionName")
+    fun getAllProductcategory(collectionName:String): LiveData<List<Productcategory>>
 }

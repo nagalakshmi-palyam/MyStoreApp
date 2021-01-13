@@ -23,6 +23,10 @@ fun insertDatatoDatabase(productName:String,mrp:String,sellingPrice:String,selec
         return ProductDatabase.getInstance(context)
             .productDao.getAllProducts()
     }
+    fun searchDataFromDB(product:String): LiveData<List<Products>> {
+        return ProductDatabase.getInstance(context)
+            .productDao.getSearchProducts(product)
+    }
 
     private var discount:Float=0.0f
     fun discountCalculate(mrp: Float,sellingPrice:Float){
