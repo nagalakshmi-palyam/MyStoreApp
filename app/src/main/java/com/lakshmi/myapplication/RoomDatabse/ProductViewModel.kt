@@ -27,6 +27,16 @@ fun insertDatatoDatabase(productName:String,mrp:String,sellingPrice:String,selec
         return ProductDatabase.getInstance(context)
             .productDao.getSearchProducts(product)
     }
+    fun deleteFromDatabase(productName:String,mrp:String,sellingPrice:String,selectUnit:String,
+                             addDesrciption:String,chooseCategory:String,productImage:String,discount:String ){
+        CoroutineScope(Dispatchers.IO).launch {
+            val product =
+                Products(productname = productName,mrp=mrp,sellingprice = sellingPrice,
+                    selectunit = selectUnit,addproductdescription = addDesrciption,
+                    choosecategory = chooseCategory,productimage = productImage,discount = discount)
+            ProductDatabase.getInstance(context).productDao.deleteProducts(product)
+        }
+    }
 
     private var discount:Float=0.0f
     fun discountCalculate(mrp: Float,sellingPrice:Float){

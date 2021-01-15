@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.lakshmi.myapplication.Activities.AddProduct
+import com.lakshmi.myapplication.Listners.ProductItemClicklistner
 import com.lakshmi.myapplication.R
 import com.lakshmi.myapplication.RoomDatabse.ProductAdapter
 import com.lakshmi.myapplication.RoomDatabse.ProductViewModel
@@ -16,7 +18,15 @@ import com.lakshmi.myapplication.RoomDatabse.ProductViewModelFactory
 import com.lakshmi.myapplication.RoomDatabse.Products
 import kotlinx.android.synthetic.main.fragment_productsragment.*
 
-class Productsragment : Fragment() ,View.OnClickListener{
+class Productsragment : Fragment() ,View.OnClickListener,ProductItemClicklistner{
+    private var name=""
+    private var mrp=""
+    private var sellingprice=""
+    private var selectunit=""
+    private var addproductdescription=""
+    private var choosecategory=""
+    private var productimage=""
+    private var discount=""
     private var list = emptyList<Products>()
     private lateinit var productViewModel: ProductViewModel
     private lateinit var productAdapter: ProductAdapter
@@ -50,7 +60,7 @@ class Productsragment : Fragment() ,View.OnClickListener{
     }
  fun setAdapterandLayout(){
      val linearlayoutmanager = LinearLayoutManager(context)
-     productAdapter= ProductAdapter(list)
+     productAdapter= ProductAdapter(list,this)
      recyclerview.apply {
          this.layoutManager = linearlayoutmanager
          this.adapter=productAdapter
@@ -61,6 +71,17 @@ class Productsragment : Fragment() ,View.OnClickListener{
             it.let {
                 this.list = it
                 productAdapter.updateList(it)
+                for(i in 0 until it.size){
+                    name=it[i].productname
+                    mrp=it[i].mrp
+                    sellingprice=it[i].sellingprice
+                    selectunit=it[i].selectunit
+                    addproductdescription=it[i].addproductdescription
+                    choosecategory=it[i].choosecategory
+                    productimage=it[i].productimage
+                    discount=it[i].discount
+
+                }
             }
         })
 
@@ -73,6 +94,9 @@ class Productsragment : Fragment() ,View.OnClickListener{
             }
         })
     }
+    fun deletefromdatabase(){
+        productViewModel.deleteFromDatabase(name,mrp,sellingprice,selectunit,addproductdescription,choosecategory,productimage,discount)
+    }
 
     override fun onClick(v: View?) {
         when(v?.id){
@@ -82,5 +106,10 @@ class Productsragment : Fragment() ,View.OnClickListener{
                 startActivity(intent)
             }
         }
+    }
+
+    override fun onProductClicked(itemModel: Products, Position: Int) {
+        Toast.makeText(requireContext(),"On discount clickeked",Toast.LENGTH_SHORT).show()
+        deletefromdatabase()
     }
 }
