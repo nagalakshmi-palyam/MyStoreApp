@@ -1,2 +1,2 @@
 # MyStoreApp
-![splash(1)](https://user-images.githubusercontent.com/68853216/105634046-2980d300-5e82-11eb-8607-e57f923c239c.png)
+![device-2021-01-24-195207](https://user-images.githubusercontent.com/68853216/105634519-68178d00-5e84-11eb-8a32-10d87f3f3cec.png)
