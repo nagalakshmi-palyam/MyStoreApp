@@ -6,3 +6,4 @@
 ![mybusiness](https://user-images.githubusercontent.com/68853216/105635346-4a4c2700-5e88-11eb-923a-8521881c290f.png)
 ![mycategory](https://user-images.githubusercontent.com/68853216/105635444-d65e4e80-5e88-11eb-92fe-d5680dd84021.png)
 ![mystoreregister](https://user-images.githubusercontent.com/68853216/105635813-0a3a7380-5e8b-11eb-803b-0ab024824670.png)
+![addproduct](https://user-images.githubusercontent.com/68853216/105635887-774e0900-5e8b-11eb-8a0f-5e5a499be77c.png)
