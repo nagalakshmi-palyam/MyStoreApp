@@ -20,12 +20,12 @@
 
 
 
-*It is a shopping app which allows user to create their own store with a feature of uploading products with their image and other details.
+It is a shopping app which allows user to create their own store with a feature of uploading products with their image and other details.
    
   *  Android Tools : Android Studio
   *  Android Components : Activities and Intents
   *  Additional Components : RecycyclerView, Fragments
   *  Architecture : MVVM(Architectural Components : Livadata,View Model)
-  * Database : Roomdatase and firebase
+  * Database : Roomdatase 
 
 
