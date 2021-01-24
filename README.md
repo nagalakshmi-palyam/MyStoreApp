@@ -7,3 +7,9 @@
 ![mycategory](https://user-images.githubusercontent.com/68853216/105635444-d65e4e80-5e88-11eb-92fe-d5680dd84021.png)
 ![mystoreregister](https://user-images.githubusercontent.com/68853216/105635813-0a3a7380-5e8b-11eb-803b-0ab024824670.png)
 ![addproduct](https://user-images.githubusercontent.com/68853216/105635887-774e0900-5e8b-11eb-8a0f-5e5a499be77c.png)
+![homefragment](https://user-images.githubusercontent.com/68853216/105635987-edeb0680-5e8b-11eb-826b-8bff72694ae6.png)
+![myproducts](https://user-images.githubusercontent.com/68853216/105636097-90a38500-5e8c-11eb-8144-c837b0c25c8e.png)
+![mycollection](https://user-images.githubusercontent.com/68853216/105636133-c8123180-5e8c-11eb-882c-c6bab9fdf3d5.png)
+![myaccount](https://user-images.githubusercontent.com/68853216/105636229-6e5e3700-5e8d-11eb-8dd2-4756ce2bedeb.png)
+![profileaccount](https://user-images.githubusercontent.com/68853216/105636288-bbdaa400-5e8d-11eb-9cf3-ed94ced41320.png)
+
