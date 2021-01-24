@@ -5,5 +5,3 @@
 ![thirdview](https://user-images.githubusercontent.com/68853216/105634698-72865680-5e85-11eb-9a12-dd181eca20cb.png)
 ![mybusiness](https://user-images.githubusercontent.com/68853216/105635346-4a4c2700-5e88-11eb-923a-8521881c290f.png)
 ![mycategory](https://user-images.githubusercontent.com/68853216/105635444-d65e4e80-5e88-11eb-92fe-d5680dd84021.png)
-![profilepicofstore](https://user-images.githubusercontent.com/68853216/105635526-4371e400-5e89-11eb-834f-aaff5774c6b0.png)
-
