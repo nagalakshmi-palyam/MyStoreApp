@@ -19,3 +19,13 @@
 ![shareapp](https://user-images.githubusercontent.com/68853216/105636716-99498a80-5e8f-11eb-99f7-49bef10b6dd6.png)
 
 
+
+*It is a shopping app which allows user to create their own store with a feature of uploading products with their image and other details.
+   
+  *  Android Tools : Android Studio
+  *  Android Components : Activities and Intents
+  *  Additional Components : RecycyclerView, Fragments
+  *  Architecture : MVVM(Architectural Components : Livadata,View Model)
+  * Database : Roomdatase and firebase
+
+
