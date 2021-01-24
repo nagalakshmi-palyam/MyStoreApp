@@ -12,4 +12,10 @@
 ![mycollection](https://user-images.githubusercontent.com/68853216/105636364-170c9680-5e8e-11eb-9bbc-ef305da5665a.png)
 ![myaccount](https://user-images.githubusercontent.com/68853216/105636229-6e5e3700-5e8d-11eb-8dd2-4756ce2bedeb.png)
 ![profileaccount](https://user-images.githubusercontent.com/68853216/105636288-bbdaa400-5e8d-11eb-9cf3-ed94ced41320.png)
+![deleviry](https://user-images.githubusercontent.com/68853216/105636536-d82b1080-5e8e-11eb-9efa-965e619ae0a0.png)
+![mypromotion](https://user-images.githubusercontent.com/68853216/105636647-1f190600-5e8f-11eb-85bc-17d707c6f069.png)
+![myhelp](https://user-images.githubusercontent.com/68853216/105636675-58ea0c80-5e8f-11eb-917e-321ffd6b5858.png)
+![youtube](https://user-images.githubusercontent.com/68853216/105636690-74edae00-5e8f-11eb-816f-d0da61f427b6.png)
+![shareapp](https://user-images.githubusercontent.com/68853216/105636716-99498a80-5e8f-11eb-99f7-49bef10b6dd6.png)
+
 
