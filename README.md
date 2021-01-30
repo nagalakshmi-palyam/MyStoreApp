@@ -36,6 +36,8 @@ Store Profile with details of store name ,image and Type of products that user g
 ![add](https://user-images.githubusercontent.com/68853216/106365616-c056ff00-635c-11eb-8609-14091411524f.png)
 ![home2](https://user-images.githubusercontent.com/68853216/106365678-0ad87b80-635d-11eb-8a0c-9613a68bdaa3.png)
 
+Added products will be display on products fragment which will displays products of all categories. While adding products we to need create category and  add these to those particular category.We can search the products by it's name
+
 
 ![product2](https://user-images.githubusercontent.com/68853216/106365709-4bd09000-635d-11eb-8c3d-3c8bfdbdfa58.png)
 ![products1](https://user-images.githubusercontent.com/68853216/106365735-7d495b80-635d-11eb-86df-ac83168a12c0.png)
