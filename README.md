@@ -42,12 +42,21 @@ Added products will be display on products fragment which will displays products
 ![product2](https://user-images.githubusercontent.com/68853216/106365709-4bd09000-635d-11eb-8c3d-3c8bfdbdfa58.png)
 ![products1](https://user-images.githubusercontent.com/68853216/106365735-7d495b80-635d-11eb-86df-ac83168a12c0.png)
 ![search](https://user-images.githubusercontent.com/68853216/106365808-fc3e9400-635d-11eb-988b-2e0f796ea1e9.png)
+
+Categories that we created will be populate on the recyclerview of Allcollections fragemnt and here also we can search our category by it's name.
+
+
 ![addcollection](https://user-images.githubusercontent.com/68853216/106365948-cb129380-635e-11eb-902e-8ea22e6c605f.png)
 ![Allcollection(1)](https://user-images.githubusercontent.com/68853216/106365833-1ed0ad00-635e-11eb-9d3f-119c77ccb330.png)
 ![csearch](https://user-images.githubusercontent.com/68853216/106365862-50e20f00-635e-11eb-8932-7631cfae1c15.png)
+
+Here I created two collections named as electronics and Sarees && arnaments the products under categories will be populate by clicking on that particular category.
+
 ![collection2](https://user-images.githubusercontent.com/68853216/106365884-6a835680-635e-11eb-9d7f-9be91a2a073f.png)
 ![collection1](https://user-images.githubusercontent.com/68853216/106365902-82f37100-635e-11eb-9fe6-3d106f4a4c5e.png)
 ![account(1)](https://user-images.githubusercontent.com/68853216/106365911-9acaf500-635e-11eb-8fcf-60052aad395e.png)
+
+
 ![account2](https://user-images.githubusercontent.com/68853216/106365924-ac140180-635e-11eb-8f93-899945c1a419.png)
 ![businesshours](https://user-images.githubusercontent.com/68853216/106365979-06ad5d80-635f-11eb-8b6a-f67892d9a063.png)
 ![videos](https://user-images.githubusercontent.com/68853216/106366015-2e9cc100-635f-11eb-8bb0-3f2d937418ee.png)
