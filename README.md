@@ -5,7 +5,7 @@ It is a shopping app which allows user to create their own store with a feature 
 ### Technologies 
   *  Android Tools         : Android Studio
   *  Android Components    : Activities and Intents
-  *  Additional Components : RecycyclerView and Fragments
+  *  Additional Components : RecycyclerView,Fragments,ViewPager and YoutubePlayerView
   *  Architecture          : MVVM(Architectural Components : Livadata,View Model)
   * Database : Roomdatase (Library)
  
@@ -22,6 +22,8 @@ It is a shopping app which allows user to create their own store with a feature 
 ![mydigital(2)](https://user-images.githubusercontent.com/68853216/106366164-111c2700-6360-11eb-8caf-63cbd736f256.png)
 ![v1(2)](https://user-images.githubusercontent.com/68853216/106366180-24c78d80-6360-11eb-8fc2-1a95836977f1.png)
 ![v2(2)](https://user-images.githubusercontent.com/68853216/106366194-3ad54e00-6360-11eb-9b3e-cf819ce7a7a0.png)
+
+Splash activity and Viewpager.Viewpager provides some information related to that particular app.
 ![v3(1)](https://user-images.githubusercontent.com/68853216/106366212-57718600-6360-11eb-9b4d-7481f9390f1c.png)
 ![pstore](https://user-images.githubusercontent.com/68853216/106365242-34dc6e80-635a-11eb-9b3e-beb85bdc379e.png)
 ![storena](https://user-images.githubusercontent.com/68853216/106365294-a2889a80-635a-11eb-9c4d-48c329dd4db5.png)
