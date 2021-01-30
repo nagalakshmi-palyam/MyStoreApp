@@ -30,10 +30,13 @@ StoreActivity which creates the Store profile to the user and it can select the 
 ![pstore](https://user-images.githubusercontent.com/68853216/106365242-34dc6e80-635a-11eb-9b3e-beb85bdc379e.png)
 ![storena](https://user-images.githubusercontent.com/68853216/106365294-a2889a80-635a-11eb-9c4d-48c329dd4db5.png)
 
+Store Profile with details of store name ,image and Type of products that user going to sale.Add Products here we can add our products along with the particular details as shown in the figure.All added products will count and that count will dispaly on homeFragment.
 
 ![storeprofile](https://user-images.githubusercontent.com/68853216/106365338-ea0f2680-635a-11eb-98b5-1283f2f2c411.png)
 ![add](https://user-images.githubusercontent.com/68853216/106365616-c056ff00-635c-11eb-8609-14091411524f.png)
 ![home2](https://user-images.githubusercontent.com/68853216/106365678-0ad87b80-635d-11eb-8a0c-9613a68bdaa3.png)
+
+
 ![product2](https://user-images.githubusercontent.com/68853216/106365709-4bd09000-635d-11eb-8c3d-3c8bfdbdfa58.png)
 ![products1](https://user-images.githubusercontent.com/68853216/106365735-7d495b80-635d-11eb-86df-ac83168a12c0.png)
 ![search](https://user-images.githubusercontent.com/68853216/106365808-fc3e9400-635d-11eb-988b-2e0f796ea1e9.png)
