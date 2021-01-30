@@ -1,6 +1,6 @@
 # MyStoreApp
 ![dsplash(1)](https://user-images.githubusercontent.com/68853216/106364696-fee9bb00-6356-11eb-8dfd-99de61a30c03.png)
-![device-2021-01-24-195207](https://user-images.githubusercontent.com/68853216/105634519-68178d00-5e84-11eb-8a32-10d87f3f3cec.png)
+![v1](https://user-images.githubusercontent.com/68853216/106364807-c4345280-6357-11eb-9150-e73f42a9bfd5.png)
 ![secondview](https://user-images.githubusercontent.com/68853216/105634646-1f140880-5e85-11eb-9b05-8f218f7ca420.png)
 ![thirdview](https://user-images.githubusercontent.com/68853216/105634698-72865680-5e85-11eb-9a12-dd181eca20cb.png)
 ![mybusiness](https://user-images.githubusercontent.com/68853216/105635346-4a4c2700-5e88-11eb-923a-8521881c290f.png)
