@@ -24,6 +24,7 @@ It is a shopping app which allows user to create their own store with a feature 
 ![v2(2)](https://user-images.githubusercontent.com/68853216/106366194-3ad54e00-6360-11eb-9b3e-cf819ce7a7a0.png)
 
 Splash activity and Viewpager.Viewpager provides some information related to that particular app.
+
 ![v3(1)](https://user-images.githubusercontent.com/68853216/106366212-57718600-6360-11eb-9b4d-7481f9390f1c.png)
 ![pstore](https://user-images.githubusercontent.com/68853216/106365242-34dc6e80-635a-11eb-9b3e-beb85bdc379e.png)
 ![storena](https://user-images.githubusercontent.com/68853216/106365294-a2889a80-635a-11eb-9c4d-48c329dd4db5.png)
