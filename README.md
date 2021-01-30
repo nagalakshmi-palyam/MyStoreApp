@@ -5,7 +5,7 @@ It is a shopping app which allows user to create their own store with a feature 
 ### Technologies 
   *  Android Tools         : Android Studio
   *  Android Components    : Activities and Intents
-  *  Additional Components : RecycyclerView, Fragments
+  *  Additional Components : RecycyclerView and Fragments
   *  Architecture          : MVVM(Architectural Components : Livadata,View Model)
   * Database : Roomdatase (Library)
   
