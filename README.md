@@ -23,7 +23,7 @@ Splash activity and Viewpager.Viewpager provides some information related to tha
 ![mydigital(2)](https://user-images.githubusercontent.com/68853216/106366164-111c2700-6360-11eb-8caf-63cbd736f256.png)
 ![v1(2)](https://user-images.githubusercontent.com/68853216/106366180-24c78d80-6360-11eb-8fc2-1a95836977f1.png)
 ![myso](https://user-images.githubusercontent.com/68853216/106367597-cdc6b600-6369-11eb-90f1-3cdb81bf792c.gif)
-![android](https://user-images.githubusercontent.com/68853216/106367399-65c3a000-6368-11eb-9d99-9d3899ec74c5.mp4)
+![android](https://user-images.githubusercontent.com/68853216/106367399-65c3a000-6368-11eb-9d99-9d3899ec74c5.gif)
 ![v2(2)](https://user-images.githubusercontent.com/68853216/106366194-3ad54e00-6360-11eb-9b3e-cf819ce7a7a0.png)
 
 StoreActivity which creates the Store profile to the user and it can select the type of product that we are going sale.
