@@ -1,8 +1,8 @@
 # MyStoreApp
-![mydigital(1)](https://user-images.githubusercontent.com/68853216/106365026-d4006680-6358-11eb-8fe8-153d5add84e9.png)
-![v1(1)](https://user-images.githubusercontent.com/68853216/106365058-07db8c00-6359-11eb-97a0-71c322ab8b47.png)
-![v2(1)](https://user-images.githubusercontent.com/68853216/106365094-2c376880-6359-11eb-95b9-beec79464fd9.png)
-![v3](https://user-images.githubusercontent.com/68853216/106365201-ef1fa600-6359-11eb-9cff-80efe22cc67f.png)
+![mydigital(2)](https://user-images.githubusercontent.com/68853216/106366164-111c2700-6360-11eb-8caf-63cbd736f256.png)
+![v1(2)](https://user-images.githubusercontent.com/68853216/106366180-24c78d80-6360-11eb-8fc2-1a95836977f1.png)
+![v2(2)](https://user-images.githubusercontent.com/68853216/106366194-3ad54e00-6360-11eb-9b3e-cf819ce7a7a0.png)
+![v3(1)](https://user-images.githubusercontent.com/68853216/106366212-57718600-6360-11eb-9b4d-7481f9390f1c.png)
 
 
 
