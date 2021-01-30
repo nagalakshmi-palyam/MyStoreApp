@@ -1,5 +1,5 @@
 # MyStoreApp
-![dsplash(1)](https://user-images.githubusercontent.com/68853216/106364696-fee9bb00-6356-11eb-8dfd-99de61a30c03.png)
+![mydigital](https://user-images.githubusercontent.com/68853216/106364914-078ec100-6358-11eb-96b6-ff076bc62937.png)
 ![v1](https://user-images.githubusercontent.com/68853216/106364807-c4345280-6357-11eb-9150-e73f42a9bfd5.png)
 ![secondview](https://user-images.githubusercontent.com/68853216/105634646-1f140880-5e85-11eb-9b05-8f218f7ca420.png)
 ![thirdview](https://user-images.githubusercontent.com/68853216/105634698-72865680-5e85-11eb-9a12-dd181eca20cb.png)
