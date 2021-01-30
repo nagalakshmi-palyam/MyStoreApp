@@ -67,6 +67,7 @@ Youtube video related to this particular app,Helpline calling fetaure ,Sharing a
 ![help](https://user-images.githubusercontent.com/68853216/106366055-6a378b00-635f-11eb-9d6f-5130b33dea30.png)
 ![shareapp(1)](https://user-images.githubusercontent.com/68853216/106366069-863b2c80-635f-11eb-96d1-6ebea43413fb.png)
 ![privacy](https://user-images.githubusercontent.com/68853216/106366107-b08cea00-635f-11eb-907c-6f278d25138f.png)
+![promote](https://user-images.githubusercontent.com/68853216/106366988-6c9ce380-6365-11eb-8270-8612de486b86.png)
 
 
 
