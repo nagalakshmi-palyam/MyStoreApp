@@ -13,7 +13,6 @@
 ![search](https://user-images.githubusercontent.com/68853216/106365808-fc3e9400-635d-11eb-988b-2e0f796ea1e9.png)
 ![addcollection](https://user-images.githubusercontent.com/68853216/106365948-cb129380-635e-11eb-902e-8ea22e6c605f.png)
 ![Allcollection(1)](https://user-images.githubusercontent.com/68853216/106365833-1ed0ad00-635e-11eb-9d3f-119c77ccb330.png)
-![Allcollection(1)](https://user-images.githubusercontent.com/68853216/106365833-1ed0ad00-635e-11eb-9d3f-119c77ccb330.png)
 ![csearch](https://user-images.githubusercontent.com/68853216/106365862-50e20f00-635e-11eb-8932-7631cfae1c15.png)
 ![collection2](https://user-images.githubusercontent.com/68853216/106365884-6a835680-635e-11eb-9d7f-9be91a2a073f.png)
 ![collection1](https://user-images.githubusercontent.com/68853216/106365902-82f37100-635e-11eb-9fe6-3d106f4a4c5e.png)
