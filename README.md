@@ -1,4 +1,13 @@
-# MyStoreApp
+# MyDigital Outlet
+
+It is a shopping app which allows user to create their own store with a feature of uploading products with their image and other details.
+
+#### Technologies 
+  *  Android Tools         : Android Studio
+  *  Android Components    : Activities and Intents
+  *  Additional Components : RecycyclerView, Fragments
+  *  Architecture          : MVVM(Architectural Components : Livadata,View Model)
+  * Database : Roomdatase (Library)
 ![mydigital(2)](https://user-images.githubusercontent.com/68853216/106366164-111c2700-6360-11eb-8caf-63cbd736f256.png)
 ![v1(2)](https://user-images.githubusercontent.com/68853216/106366180-24c78d80-6360-11eb-8fc2-1a95836977f1.png)
 ![v2(2)](https://user-images.githubusercontent.com/68853216/106366194-3ad54e00-6360-11eb-9b3e-cf819ce7a7a0.png)
@@ -25,14 +34,9 @@
 ![privacy](https://user-images.githubusercontent.com/68853216/106366107-b08cea00-635f-11eb-907c-6f278d25138f.png)
 
 
-It is a shopping app which allows user to create their own store with a feature of uploading products with their image and other details.
 
-#### TechStacks Used:
+
    
-  *  Android Tools : Android Studio
-  *  Android Components : Activities and Intents
-  *  Additional Components : RecycyclerView, Fragments
-  *  Architecture : MVVM(Architectural Components : Livadata,View Model)
-  * Database : Roomdatase 
+ 
 
 
