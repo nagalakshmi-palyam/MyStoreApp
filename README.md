@@ -10,6 +10,7 @@
 ![pstore](https://user-images.githubusercontent.com/68853216/106365242-34dc6e80-635a-11eb-9b3e-beb85bdc379e.png)
 ![storena](https://user-images.githubusercontent.com/68853216/106365294-a2889a80-635a-11eb-9c4d-48c329dd4db5.png)
 ![storeprofile](https://user-images.githubusercontent.com/68853216/106365338-ea0f2680-635a-11eb-98b5-1283f2f2c411.png)
+![addproducts](https://user-images.githubusercontent.com/68853216/106365393-54c06200-635b-11eb-8799-f120527f17bc.png)
 
 ![mybusiness](https://user-images.githubusercontent.com/68853216/105635346-4a4c2700-5e88-11eb-923a-8521881c290f.png)
 ![mycategory](https://user-images.githubusercontent.com/68853216/105635444-d65e4e80-5e88-11eb-92fe-d5680dd84021.png)
