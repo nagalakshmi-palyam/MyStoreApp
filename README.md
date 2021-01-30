@@ -8,7 +8,15 @@ It is a shopping app which allows user to create their own store with a feature 
   *  Additional Components : RecycyclerView and Fragments
   *  Architecture          : MVVM(Architectural Components : Livadata,View Model)
   * Database : Roomdatase (Library)
-  
+ 
+ ### Features
+  * It Allows User to add Their Products along with image, MRP ,Selling Price, Desrciption.
+  * Allows to add that product into particular Category(Group of products which are belong to similar category)
+  * We can Search for particular Product or Category by it's name.
+  * App sharing feature is included
+  * Call option to call helpline number
+  * It has a feature to change Business hour Details.
+  * Feature to navigate to youtube to know more about this app.
  ### Screenshots with description
 
 ![mydigital(2)](https://user-images.githubusercontent.com/68853216/106366164-111c2700-6360-11eb-8caf-63cbd736f256.png)
