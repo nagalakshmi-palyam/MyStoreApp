@@ -18,16 +18,19 @@ It is a shopping app which allows user to create their own store with a feature 
   * It has a feature to change Business hour Details.
   * Feature to navigate to youtube to know more about this app.
  ### Screenshots with description
+Splash activity and Viewpager.Viewpager provides some information related to that particular app.
 
 ![mydigital(2)](https://user-images.githubusercontent.com/68853216/106366164-111c2700-6360-11eb-8caf-63cbd736f256.png)
 ![v1(2)](https://user-images.githubusercontent.com/68853216/106366180-24c78d80-6360-11eb-8fc2-1a95836977f1.png)
 ![v2(2)](https://user-images.githubusercontent.com/68853216/106366194-3ad54e00-6360-11eb-9b3e-cf819ce7a7a0.png)
 
-Splash activity and Viewpager.Viewpager provides some information related to that particular app.
+StoreActivity which creates the Store profile to the user and it can select the type of product that we are going sale.
 
 ![v3(1)](https://user-images.githubusercontent.com/68853216/106366212-57718600-6360-11eb-9b4d-7481f9390f1c.png)
 ![pstore](https://user-images.githubusercontent.com/68853216/106365242-34dc6e80-635a-11eb-9b3e-beb85bdc379e.png)
 ![storena](https://user-images.githubusercontent.com/68853216/106365294-a2889a80-635a-11eb-9c4d-48c329dd4db5.png)
+
+
 ![storeprofile](https://user-images.githubusercontent.com/68853216/106365338-ea0f2680-635a-11eb-98b5-1283f2f2c411.png)
 ![add](https://user-images.githubusercontent.com/68853216/106365616-c056ff00-635c-11eb-8609-14091411524f.png)
 ![home2](https://user-images.githubusercontent.com/68853216/106365678-0ad87b80-635d-11eb-8a0c-9613a68bdaa3.png)
