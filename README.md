@@ -11,6 +11,7 @@
 ![storena](https://user-images.githubusercontent.com/68853216/106365294-a2889a80-635a-11eb-9c4d-48c329dd4db5.png)
 ![storeprofile](https://user-images.githubusercontent.com/68853216/106365338-ea0f2680-635a-11eb-98b5-1283f2f2c411.png)
 ![add](https://user-images.githubusercontent.com/68853216/106365616-c056ff00-635c-11eb-8609-14091411524f.png)
+![home2](https://user-images.githubusercontent.com/68853216/106365678-0ad87b80-635d-11eb-8a0c-9613a68bdaa3.png)
 
 
 ![mybusiness](https://user-images.githubusercontent.com/68853216/105635346-4a4c2700-5e88-11eb-923a-8521881c290f.png)
