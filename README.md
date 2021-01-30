@@ -22,7 +22,7 @@
 
 It is a shopping app which allows user to create their own store with a feature of uploading products with their image and other details.
 
-# TechStacks Used:
+#### TechStacks Used:
    
   *  Android Tools : Android Studio
   *  Android Components : Activities and Intents
