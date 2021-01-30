@@ -56,10 +56,14 @@ Here I created two collections named as electronics and Sarees && arnaments the 
 ![collection1](https://user-images.githubusercontent.com/68853216/106365902-82f37100-635e-11eb-9fe6-3d106f4a4c5e.png)
 ![account(1)](https://user-images.githubusercontent.com/68853216/106365911-9acaf500-635e-11eb-8fcf-60052aad395e.png)
 
+Acount prrofiles which having profile details we have entered previous along with some of the special features.
 
 ![account2](https://user-images.githubusercontent.com/68853216/106365924-ac140180-635e-11eb-8f93-899945c1a419.png)
 ![businesshours](https://user-images.githubusercontent.com/68853216/106365979-06ad5d80-635f-11eb-8b6a-f67892d9a063.png)
 ![videos](https://user-images.githubusercontent.com/68853216/106366015-2e9cc100-635f-11eb-8bb0-3f2d937418ee.png)
+
+Youtube video related to this particular app,Helpline calling fetaure ,Sharing app, Changing business hours and promotions all these features included.
+
 ![help](https://user-images.githubusercontent.com/68853216/106366055-6a378b00-635f-11eb-9d6f-5130b33dea30.png)
 ![shareapp(1)](https://user-images.githubusercontent.com/68853216/106366069-863b2c80-635f-11eb-96d1-6ebea43413fb.png)
 ![privacy](https://user-images.githubusercontent.com/68853216/106366107-b08cea00-635f-11eb-907c-6f278d25138f.png)
